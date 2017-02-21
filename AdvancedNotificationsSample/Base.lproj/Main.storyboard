@@ -44,6 +44,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Advanced Notification" id="syL-Mh-895"/>
+                    <connections>
+                        <outlet property="notificationButton" destination="dFm-j6-Gco" id="WIn-Hl-RSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
