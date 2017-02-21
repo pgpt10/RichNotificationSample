@@ -1,15 +1,18 @@
 # RichNotificationSample
 Advanced notification in iOS 10
 
-#Requirements
+## Preview
+<img src="https://github.com/pgpt10/RichNotificationSample/blob/master/Screenshot.PNG"  width='300' height='534' alt="Preview gif">
 
-1. Swift 3.0
-2. xcode 8
-3. iOS 10
+## Requirements
 
-#Features
+* Swift 3.0
+* xcode 8
+* iOS 10
 
-1. Scheduling notification using UNUserNotifications
+## Features
+
+1. Scheduling notification using UserNotifications framework (UNUserNotifications)
 2. Creating Custom UI for notifications using Notification Content Extension. It includes:
 
   1. Attachments
