@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
         //Requesting user permission for setting notifications
-        UNUserNotificationCenter.current().requestAuthorization(options: UNAuthorizationOptions.alert) { (granted, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             if error != nil
             {
                 print("\u{1F6AB} \(error!.localizedDescription).")
@@ -67,6 +67,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ///Handling notification actions.
 extension AppDelegate : UNUserNotificationCenterDelegate
 {
+    //Called when the notification is delivered to foreground app.
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+    {
+        completionHandler([.alert, .badge, .sound])
+    }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
     {
         if response.actionIdentifier == "remindLater"

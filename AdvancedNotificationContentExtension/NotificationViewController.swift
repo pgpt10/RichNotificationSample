@@ -83,7 +83,7 @@ extension NotificationViewController : UNNotificationContentExtension
         {
             self.responseLabel.text = "Remind Later"
             self.responseLabel.textColor = UIColor.blue
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 completion(.dismissAndForwardAction)
             }
         }
@@ -91,7 +91,7 @@ extension NotificationViewController : UNNotificationContentExtension
         {
             self.responseLabel.text = "Accepted"
             self.responseLabel.textColor = UIColor.green
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 completion(.dismiss)
             }
         }
@@ -99,7 +99,7 @@ extension NotificationViewController : UNNotificationContentExtension
         {
             self.responseLabel.text = "Declined"
             self.responseLabel.textColor = UIColor.red
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 completion(.dismiss)
             }        }
         else if response.actionIdentifier == "comment"
