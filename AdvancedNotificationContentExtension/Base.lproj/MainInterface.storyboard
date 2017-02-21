@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController title="Rich Notifications" id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="AdvancedNotificationContentExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="296"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adh-bI-bKK">
+                                <rect key="frame" x="15" y="15" width="290" height="22"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWR-nD-jdx">
+                                <rect key="frame" x="15" y="44.5" width="290" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="G66-Zb-zPd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-mX-F6b">
+                                <rect key="frame" x="15" y="180" width="290" height="22"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-Ny-9NZ">
+                                <rect key="frame" x="15" y="210" width="290" height="22"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXj-wV-T74">
+                                <rect key="frame" x="15" y="238.5" width="290" height="16"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxV-j0-vEW">
+                                <rect key="frame" x="15" y="262" width="290" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="adh-bI-bKK" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="15" id="418-DD-wA3"/>
+                            <constraint firstAttribute="trailing" secondItem="AXj-wV-T74" secondAttribute="trailing" constant="15" id="7yi-x7-dMd"/>
+                            <constraint firstItem="IWR-nD-jdx" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="8ng-PU-rYI"/>
+                            <constraint firstItem="u0c-Ny-9NZ" firstAttribute="top" secondItem="gxN-mX-F6b" secondAttribute="bottom" constant="8" id="B3S-23-hLn"/>
+                            <constraint firstAttribute="trailing" secondItem="adh-bI-bKK" secondAttribute="trailing" constant="15" id="Bhv-8a-oKz"/>
+                            <constraint firstAttribute="trailing" secondItem="gxN-mX-F6b" secondAttribute="trailing" constant="15" id="DOT-Nh-CXB"/>
+                            <constraint firstItem="AXj-wV-T74" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="JkL-9c-0jw"/>
+                            <constraint firstItem="AXj-wV-T74" firstAttribute="top" secondItem="u0c-Ny-9NZ" secondAttribute="bottom" constant="7" id="RZv-li-8yH"/>
+                            <constraint firstItem="IWR-nD-jdx" firstAttribute="top" secondItem="adh-bI-bKK" secondAttribute="bottom" constant="8" id="V43-13-XFA"/>
+                            <constraint firstItem="adh-bI-bKK" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="Wt8-b9-2f6"/>
+                            <constraint firstAttribute="trailing" secondItem="KxV-j0-vEW" secondAttribute="trailing" constant="15" id="Wvg-LA-hau"/>
+                            <constraint firstAttribute="trailing" secondItem="u0c-Ny-9NZ" secondAttribute="trailing" constant="15" id="cCZ-6v-GPb"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KxV-j0-vEW" secondAttribute="bottom" constant="15.5" id="fnG-Zd-bEP"/>
+                            <constraint firstItem="KxV-j0-vEW" firstAttribute="top" secondItem="AXj-wV-T74" secondAttribute="bottom" constant="8" id="lm4-bm-XjS"/>
+                            <constraint firstItem="gxN-mX-F6b" firstAttribute="top" secondItem="IWR-nD-jdx" secondAttribute="bottom" constant="8" id="ms5-tg-txE"/>
+                            <constraint firstItem="u0c-Ny-9NZ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="qav-od-758"/>
+                            <constraint firstAttribute="trailing" secondItem="IWR-nD-jdx" secondAttribute="trailing" constant="15" id="wdv-fI-UEf"/>
+                            <constraint firstItem="gxN-mX-F6b" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="y7x-ZZ-hAz"/>
+                            <constraint firstItem="KxV-j0-vEW" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="zY7-uG-Q5G"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="296"/>
+                    <connections>
+                        <outlet property="accessoryView" destination="es0-6S-wIO" id="cE2-hO-hM0"/>
+                        <outlet property="additionalInfoLabel" destination="AXj-wV-T74" id="Dau-Hr-PKx"/>
+                        <outlet property="bodyLabel" destination="u0c-Ny-9NZ" id="ajD-en-Sfv"/>
+                        <outlet property="eventImageView" destination="IWR-nD-jdx" id="5pr-xV-HYH"/>
+                        <outlet property="responseLabel" destination="KxV-j0-vEW" id="x18-8y-a1Q"/>
+                        <outlet property="subtitleLabel" destination="gxN-mX-F6b" id="OsF-8z-zNa"/>
+                        <outlet property="textField" destination="NG4-8O-xiI" id="ahh-Nw-RaD"/>
+                        <outlet property="titleLabel" destination="adh-bI-bKK" id="u59-TS-KUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="es0-6S-wIO">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-8O-xiI">
+                            <rect key="frame" x="5" y="5" width="160" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-3o-fou">
+                            <rect key="frame" x="170" y="4" width="30" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="oaM-H1-y95"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                            <state key="normal" title="👍">
+                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTapAcceptButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="tID-Ml-BIT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-Ii-Pio">
+                            <rect key="frame" x="205" y="4" width="30" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="hAF-f8-nRo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                            <state key="normal" title="👎">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTapDeclineButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="xgS-ir-SBM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Rsy-3o-fou" firstAttribute="leading" secondItem="NG4-8O-xiI" secondAttribute="trailing" constant="5" id="2Xv-ED-MrL"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="top" secondItem="es0-6S-wIO" secondAttribute="top" constant="5" id="FuP-id-42q"/>
+                        <constraint firstAttribute="bottom" secondItem="NG4-8O-xiI" secondAttribute="bottom" constant="5" id="GEj-wE-Jcu"/>
+                        <constraint firstItem="bQc-Ii-Pio" firstAttribute="leading" secondItem="Rsy-3o-fou" secondAttribute="trailing" constant="5" id="Koc-Xz-Fzj"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="leading" secondItem="es0-6S-wIO" secondAttribute="leading" constant="5" id="QJg-jg-mBz"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="centerY" secondItem="Rsy-3o-fou" secondAttribute="centerY" id="YlK-fB-Bri"/>
+                        <constraint firstAttribute="trailing" secondItem="bQc-Ii-Pio" secondAttribute="trailing" constant="5" id="hSs-6l-r8Z"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="centerY" secondItem="bQc-Ii-Pio" secondAttribute="centerY" id="r68-HU-7Za"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="12.593703148425789"/>
+        </scene>
+    </scenes>
+</document>
