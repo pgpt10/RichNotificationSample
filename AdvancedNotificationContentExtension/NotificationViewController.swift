@@ -63,6 +63,10 @@ extension NotificationViewController : UNNotificationContentExtension
         {
             self.additionalInfoLabel.text = additionalInfo
         }
+        else
+        {
+            self.additionalInfoLabel.text = nil
+        }
         if let attachment = content.attachments.last, attachment.identifier == "invitation"
         {
             if attachment.url.startAccessingSecurityScopedResource()

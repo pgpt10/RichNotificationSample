@@ -18,7 +18,7 @@ func scheduleNotification()
     notificationContent.title = "Party Invitation"
     notificationContent.subtitle = "Inauguration Ceremony"
     notificationContent.body = "You are invited to attend the inauguration ceremony with us. Please join us."
-    notificationContent.userInfo = ["additionalInfo" : "Address: 41, Dharam Kunj Aptts., Sector-9, Rohini, Delhi - 110085"]
+    notificationContent.userInfo = ["additionalInfo" : "Address: 411, Good Fortune Aptts., Sector-15, Rohini, Delhi - 110089"]
     notificationContent.sound = .default()
     notificationContent.categoryIdentifier = categoryIdentifier
     if let path = Bundle.main.path(forResource: "logo", ofType: "png")
