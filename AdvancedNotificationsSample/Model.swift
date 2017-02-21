@@ -12,6 +12,7 @@ import UserNotifications
 let categoryIdentifier = "myNotificationCategory"
 let timeInterval : TimeInterval = 10 //In seconds
 
+///Method to schedule the notification. It defines the notification content and the trigger time.
 func scheduleNotification()
 {
     let notificationContent = UNMutableNotificationContent()

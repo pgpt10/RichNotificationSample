@@ -19,6 +19,7 @@ class ViewController: UIViewController
     //MARK: Button Action Methods
     @IBAction func onTapSetNotificationButton(_ sender: UIButton)
     {
+        //Scheduling the notification on button tap
         scheduleNotification()
     }
 }

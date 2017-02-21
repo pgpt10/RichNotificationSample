@@ -14,9 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
+        //Requesting user permission for setting notifications
         UNUserNotificationCenter.current().requestAuthorization(options: UNAuthorizationOptions.alert) { (granted, error) in
             if error != nil
             {
@@ -27,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if granted
                 {
                     print("\u{2705} Request granted.")
+                    
+                    /**Defining actions to each UNNotificationCategory. Here we specify only 1 category : "myNotificationCategory". 4 actions are associated with it. 
+                     1. Remind me later
+                     2. Accept
+                     3. Decline
+                     4. Comment
+                     **/
+                    
                     let remindLaterAction = UNNotificationAction(identifier: "remindLater", title: "Remind me later", options: [])
                     let acceptAction = UNNotificationAction(identifier: "accept", title: "Accept", options: [])
                     let declineAction = UNNotificationAction(identifier: "decline", title: "Decline", options: [])
@@ -55,6 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {}
 }
 
+// MARK: - UNUserNotificationCenterDelegate Methods
+///Handling notification actions.
 extension AppDelegate : UNUserNotificationCenterDelegate
 {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
