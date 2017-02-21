@@ -12,7 +12,7 @@ Advanced notification in iOS 10
 
 ## Features
 
-1. Scheduling notification using UserNotifications framework (UNUserNotifications)
+1. Scheduling notification using UserNotifications framework.
 2. Creating Custom UI for notifications using Notification Content Extension. It includes:
 
   1. Attachments
