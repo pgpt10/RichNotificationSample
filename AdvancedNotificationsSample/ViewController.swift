@@ -24,7 +24,6 @@ class ViewController: UIViewController
     }
     
     //MARK: Private Methods
-    /// This method checks the timer count and sends "checkUserNumberIsVerified" API hit after every 10 seconds. If the timer count is >=60, it invalidates the timer and asks the user to try again for verification.
     @objc private func updateTime()
     {
         if self.timerCount >= Int(timeInterval)
@@ -39,7 +38,6 @@ class ViewController: UIViewController
         self.timerCount += 1
         self.notificationButton.setTitle("\(Int(timeInterval) - self.timerCount)", for: .normal)
     }
-
     
     //MARK: Button Action Methods
     @IBAction func onTapSetNotificationButton(_ sender: UIButton)

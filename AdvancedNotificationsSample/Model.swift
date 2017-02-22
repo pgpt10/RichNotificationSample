@@ -10,7 +10,7 @@ import Foundation
 import UserNotifications
 
 let categoryIdentifier = "myNotificationCategory"
-let timeInterval : TimeInterval = 10 //In seconds
+let timeInterval : TimeInterval = 5 //In seconds
 
 ///Method to schedule the notification. It defines the notification content and the trigger time.
 func scheduleNotification()

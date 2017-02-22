@@ -101,21 +101,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="es0-6S-wIO">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-8O-xiI">
-                            <rect key="frame" x="5" y="5" width="160" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Share your thoughts..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-8O-xiI">
+                            <rect key="frame" x="8" y="8" width="148" height="34"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-3o-fou">
-                            <rect key="frame" x="170" y="4" width="30" height="32"/>
+                            <rect key="frame" x="164" y="7" width="30" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="oaM-H1-y95"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                             <state key="normal" title="👍">
                                 <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -124,11 +124,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-Ii-Pio">
-                            <rect key="frame" x="205" y="4" width="30" height="32"/>
+                            <rect key="frame" x="202" y="7" width="30" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="hAF-f8-nRo"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                             <state key="normal" title="👎">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -139,13 +139,13 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="Rsy-3o-fou" firstAttribute="leading" secondItem="NG4-8O-xiI" secondAttribute="trailing" constant="5" id="2Xv-ED-MrL"/>
-                        <constraint firstItem="NG4-8O-xiI" firstAttribute="top" secondItem="es0-6S-wIO" secondAttribute="top" constant="5" id="FuP-id-42q"/>
-                        <constraint firstAttribute="bottom" secondItem="NG4-8O-xiI" secondAttribute="bottom" constant="5" id="GEj-wE-Jcu"/>
-                        <constraint firstItem="bQc-Ii-Pio" firstAttribute="leading" secondItem="Rsy-3o-fou" secondAttribute="trailing" constant="5" id="Koc-Xz-Fzj"/>
-                        <constraint firstItem="NG4-8O-xiI" firstAttribute="leading" secondItem="es0-6S-wIO" secondAttribute="leading" constant="5" id="QJg-jg-mBz"/>
+                        <constraint firstItem="Rsy-3o-fou" firstAttribute="leading" secondItem="NG4-8O-xiI" secondAttribute="trailing" constant="8" id="2Xv-ED-MrL"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="top" secondItem="es0-6S-wIO" secondAttribute="top" constant="8" id="FuP-id-42q"/>
+                        <constraint firstAttribute="bottom" secondItem="NG4-8O-xiI" secondAttribute="bottom" constant="8" id="GEj-wE-Jcu"/>
+                        <constraint firstItem="bQc-Ii-Pio" firstAttribute="leading" secondItem="Rsy-3o-fou" secondAttribute="trailing" constant="8" id="Koc-Xz-Fzj"/>
+                        <constraint firstItem="NG4-8O-xiI" firstAttribute="leading" secondItem="es0-6S-wIO" secondAttribute="leading" constant="8" id="QJg-jg-mBz"/>
                         <constraint firstItem="NG4-8O-xiI" firstAttribute="centerY" secondItem="Rsy-3o-fou" secondAttribute="centerY" id="YlK-fB-Bri"/>
-                        <constraint firstAttribute="trailing" secondItem="bQc-Ii-Pio" secondAttribute="trailing" constant="5" id="hSs-6l-r8Z"/>
+                        <constraint firstAttribute="trailing" secondItem="bQc-Ii-Pio" secondAttribute="trailing" constant="8" id="hSs-6l-r8Z"/>
                         <constraint firstItem="NG4-8O-xiI" firstAttribute="centerY" secondItem="bQc-Ii-Pio" secondAttribute="centerY" id="r68-HU-7Za"/>
                     </constraints>
                 </view>

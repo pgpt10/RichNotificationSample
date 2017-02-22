@@ -28,7 +28,7 @@ class NotificationViewController: UIViewController
         super.viewDidLoad()
     }
     
-    //If you don't want the standard text field
+    //If you want to use default text field - comment canBecomeFirstResponder and inputAccessoryView (below 2 computed properties)
     override var canBecomeFirstResponder: Bool{
         return true
     }
@@ -104,8 +104,14 @@ extension NotificationViewController : UNNotificationContentExtension
             }        }
         else if response.actionIdentifier == "comment"
         {
+            //If you want to use default text field - uncomment below 2 lines
+            //let textResponse = response as! UNTextInputNotificationResponse
+            //self.responseLabel.text = textResponse.userText
+            
+            //If you want to use default text field - comment below 2 lines
             self.becomeFirstResponder()
             self.textField.becomeFirstResponder()
+            
             completion(.doNotDismiss)
         }
     }
