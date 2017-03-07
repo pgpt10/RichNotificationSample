@@ -2,7 +2,7 @@
 Advanced notification in iOS 10
 
 ## Preview
-<img src="https://github.com/pgpt10/RichNotificationSample/blob/master/Screenshot.PNG"  width='300' height='534' alt="Preview gif">
+<img src="https://github.com/pgpt10/RichNotificationSample/blob/master/Demo.gif"  width='300' height='534' alt="Preview gif">
 
 ## Requirements
 
