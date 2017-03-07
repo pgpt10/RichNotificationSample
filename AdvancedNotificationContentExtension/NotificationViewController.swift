@@ -105,6 +105,7 @@ extension NotificationViewController : UNNotificationContentExtension
         else if response.actionIdentifier == "comment"
         {
             //If you want to use default text field - uncomment below 2 lines
+            
             //let textResponse = response as! UNTextInputNotificationResponse
             //self.responseLabel.text = textResponse.userText
             
